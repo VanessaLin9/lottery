@@ -16,6 +16,9 @@ app.use(flash())
 app.get('/', (req, res) => {
   res.render('index')
 })
+app.post('/', (req,res) => {
+  res.render('index')
+})
 
 app.listen(port, () => {
   console.log(`Express is listen on localhost${port}`)
